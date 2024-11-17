@@ -17,7 +17,7 @@ Firmware_Diy_Core() {
 	
 	Short_Fw_Date=true
 	# 简短的固件日期, true: [20210601]; false: [202106012359]
-	x86_Full_Images=false
+	x86_Full_Images=true
 	# 额外上传已检测到的 x86 虚拟磁盘镜像, true: [上传]; false: [不上传]
 	Fw_MFormat=AUTO
 	# 自定义固件格式, AUTO: [自动识别]
