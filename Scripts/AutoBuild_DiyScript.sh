@@ -46,8 +46,10 @@ Firmware_Diy() {
 	# ${CONFIG_FILE}			使用的配置文件名称
 	# ${FEEDS_CONF}			OpenWrt 源码目录下的 feeds.conf.default 文件
             echo "src-git OpenAppFilter https://github.com/destan19/OpenAppFilter.git" >> feeds.conf.default
-	    echo "src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git" >> feeds.conf.default
-	     
+	    echo "src-git SSRPLUS https://github.com/WangWenBin2017/OpenWrt-SSRPLUS.git" >> feeds.conf.default
+	    echo "src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git;main" >> feeds.conf.default
+            echo "src-git argon https://github.com/jerrykuku/luci-theme-argon.git;main" >> feeds.conf.default
+	    echo "src-git netgear https://github.com/ysoyipek/luci-theme-netgear.git;main" >> feeds.conf.default 
 	# ${CustomFiles}			仓库中的 /CustomFiles 绝对路径
 	# ${Scripts}				仓库中的 /Scripts 绝对路径
 	# ${FEEDS_LUCI}			OpenWrt 源码目录下的 package/feeds/luci 目录
