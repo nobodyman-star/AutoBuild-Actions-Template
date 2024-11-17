@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # AutoBuild Module by Hyy2001 <https://github.com/Hyy2001X/AutoBuild-Actions-BETA>
 # AutoBuild DiyScript
@@ -50,6 +51,7 @@ Firmware_Diy() {
 	    echo "src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git;main" >> feeds.conf.default
             echo "src-git argon https://github.com/jerrykuku/luci-theme-argon.git;main" >> feeds.conf.default
 	    echo "src-git netgear https://github.com/ysoyipek/luci-theme-netgear.git;main" >> feeds.conf.default 
+            echo "src-git poweroffdevice https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice" >> feeds.conf.default 
 	# ${CustomFiles}			仓库中的 /CustomFiles 绝对路径
 	# ${Scripts}				仓库中的 /Scripts 绝对路径
 	# ${FEEDS_LUCI}			OpenWrt 源码目录下的 package/feeds/luci 目录
