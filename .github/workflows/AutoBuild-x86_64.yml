@@ -223,8 +223,7 @@ jobs:
          ./scripts/feeds install -a
         make defconfig
         Firmware_Diy_Start
-       # rm -f .config && cp $GITHUB_WORKSPACE/Configs/$CONFIG_FILE .config
-        cp $GITHUB_WORKSPACE/Configs/$CONFIG_FILE .config
+        rm -f .config && cp $GITHUB_WORKSPACE/Configs/$CONFIG_FILE .config
         Firmware_Diy_Main
         Firmware_Diy
         Firmware_Diy_Other
