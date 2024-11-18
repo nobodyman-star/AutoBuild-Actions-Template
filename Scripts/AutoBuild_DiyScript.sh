@@ -51,7 +51,7 @@ Firmware_Diy() {
 	   git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/infinityfreedom
 	   git clone https://github.com/ysoyipek/luci-theme-netgear package/netgear
            git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
-	   git clone https://github.com/knight-stars/openwrt-packages package/openwrt-packages
+	   git clone https://github.com/knight-stars/openwrt-packages feeds/package/openwrt-packages
            git clone https://github.com/knight-stars/uhttpd package/uhttpd 
 	   git clone https://github.com/knight-stars/luci-app-lucky package/luci-app-lucky
            git clone https://github.com/knight-stars/luci-app-zerotier package/luci-app-zerotier
