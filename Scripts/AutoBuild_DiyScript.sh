@@ -54,6 +54,7 @@ Firmware_Diy() {
 	   git clone https://github.com/knight-stars/openwrt-packages package/openwrt-packages
            git clone https://github.com/knight-stars/uhttpd package/uhttpd 
 	   git clone https://github.com/knight-stars/luci-app-lucky package/luci-app-lucky
+           git clone https://github.com/knight-stars/luci-app-zerotier package/luci-app-zerotier
 	# ${CustomFiles}			仓库中的 /CustomFiles 绝对路径
 	# ${Scripts}				仓库中的 /Scripts 绝对路径
 	# ${FEEDS_LUCI}			OpenWrt 源码目录下的 package/feeds/luci 目录
