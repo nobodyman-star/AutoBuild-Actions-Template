@@ -45,7 +45,7 @@ Firmware_Diy() {
 
 	# ${WORK}				OpenWrt 源码位置
 	# ${CONFIG_FILE}			使用的配置文件名称
-        ${CONFIG_FILE}=x86_64
+      
 	# ${FEEDS_CONF}			OpenWrt 源码目录下的 feeds.conf.default 文件
             echo "src-git OpenAppFilter https://github.com/destan19/OpenAppFilter.git" >> feeds.conf.default
 	    echo "src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git" >> feeds.conf.default
