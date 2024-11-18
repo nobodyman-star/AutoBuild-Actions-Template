@@ -48,7 +48,7 @@ Firmware_Diy() {
       
 	# ${FEEDS_CONF}			OpenWrt 源码目录下的 feeds.conf.default 文件
            git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
-	   git clone infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/infinityfreedom
+	   git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/infinityfreedom
 	   git clone https://github.com/ysoyipek/luci-theme-netgear package/netgear
            git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
 	   git clone https://github.com/knight-stars/openwrt-packages package/openwrt-packages
