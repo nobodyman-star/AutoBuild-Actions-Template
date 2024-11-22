@@ -11,6 +11,8 @@ CONFIG_GRUB_TITLE="x86_64 firmware by AutoBuild-Actions"
 CONFIG_GRUB_TIMEOUT="3"
 # CONFIG_GRUB_CONSOLE is not set
 #CONFIG_PACKAGE_luci-app-adblock=y
+CONFIG_PACKAGE_luci-app-diskman=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk=y
 CONFIG_PACKAGE_luci-app-webrestriction=y
 CONFIG_PACKAGE_luci-app-autopoweroff=y
 CONFIG_PACKAGE_luci-app-netdata=y
@@ -28,7 +30,6 @@ CONFIG_PACKAGE_luci-app-poweroff=y
 CONFIG_PACKAGE_luci-app-oaf=y
 CONFIG_PACKAGE_luci-app-iperf3-server=y
 CONFIG_PACKAGE_iperf3=y
-CONFIG_PACKAGE_lsblk=y
 CONFIG_PACKAGE_nfs-utils=y
 CONFIG_PACKAGE_luci-app-uhttpd=y
 #CONFIG_PACKAGE_luci-app-bypass=y
