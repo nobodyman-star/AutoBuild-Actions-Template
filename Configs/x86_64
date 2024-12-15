@@ -10,7 +10,7 @@ CONFIG_TARGET_ROOTFS_PARTSIZE=448  #设定根文件系统（rootfs）的分区�
 CONFIG_GRUB_TITLE="x86_64 firmware by AutoBuild-Actions"
 CONFIG_GRUB_TIMEOUT="0"
 # CONFIG_GRUB_CONSOLE is not set
-CONFIG_PACKAGE_luci-app-adblock=y
+# CONFIG_PACKAGE_luci-app-adblock=y
 CONFIG_PACKAGE_luci-app-netspeedtest=y
 CONFIG_PACKAGE_luci-app-wrtbwmon=y
 CONFIG_PACKAGE_luci-app-control-weburl=y
