@@ -51,7 +51,18 @@ Firmware_Diy() {
           # git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
 	   git clone https://github.com/nobodyman-star/luci-app-control-weburl package/luci-app-control-weburl
            git clone https://github.com/nobodyman-star/rely-app package/rely-app
-	   sed -i ‘/^#/d’ feeds.conf.default
+	   echo "src-git packages https://github.com/coolsnowwolf/packages
+                 src-git luci https://github.com/coolsnowwolf/luci
+                 #src-git luci https://github.com/coolsnowwolf/luci.git;openwrt-23.05
+                 src-git routing https://github.com/coolsnowwolf/routing
+                 src-git telephony https://github.com/coolsnowwolf/telephony.git
+                 #src-git helloworld https://github.com/fw876/helloworld.git
+                 #src-git oui https://github.com/zhaojh329/oui.git
+                 #src-git video https://github.com/openwrt/video.git
+                 #src-git targets https://github.com/openwrt/targets.git
+                 #src-git oldpackages http://git.openwrt.org/packages.git
+                 #src-link custom /usr/src/openwrt/custom-feed
+                 " > feeds.conf.default
         
 	# ${CustomFiles}			仓库中的 /CustomFiles 绝对路径
 	# ${Scripts}				仓库中的 /Scripts 绝对路径
