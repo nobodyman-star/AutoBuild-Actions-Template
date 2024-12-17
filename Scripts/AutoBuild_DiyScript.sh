@@ -51,6 +51,8 @@ Firmware_Diy() {
           # git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
 	   git clone https://github.com/nobodyman-star/luci-app-control-weburl package/luci-app-control-weburl
            git clone https://github.com/nobodyman-star/rely-app package/rely-app
+	   sed -i ‘/^#/d’ feeds.conf.default
+        
 	# ${CustomFiles}			仓库中的 /CustomFiles 绝对路径
 	# ${Scripts}				仓库中的 /Scripts 绝对路径
 	# ${FEEDS_LUCI}			OpenWrt 源码目录下的 package/feeds/luci 目录
