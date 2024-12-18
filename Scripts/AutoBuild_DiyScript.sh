@@ -47,11 +47,11 @@ Firmware_Diy() {
 	# ${CONFIG_FILE}			使用的配置文件名称
       
 	# ${FEEDS_CONF}			OpenWrt 源码目录下的 feeds.conf.default 文件
-           git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
-           git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
-	   git clone https://github.com/nobodyman-star/luci-app-control-weburl package/luci-app-control-weburl
-           #git clone https://github.com/nobodyman-star/rely-app package/rely-app
-	   git clone https://github.com/sirpdboy/luci-app-lucky
+           #git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
+           #git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
+	   #git clone https://github.com/nobodyman-star/luci-app-control-weburl package/luci-app-control-weburl
+           git clone https://github.com/nobodyman-star/rely-app package/rely-app
+	   #git clone https://github.com/sirpdboy/luci-app-lucky
            git clone https://github.com/nobodyman-star/luci-app
 	   echo "src-git packages https://github.com/coolsnowwolf/packages" > feeds.conf.default
            echo "src-git luci https://github.com/coolsnowwolf/luci" >> feeds.conf.default
