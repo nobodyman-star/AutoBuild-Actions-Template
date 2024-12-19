@@ -54,8 +54,8 @@ Firmware_Diy() {
 	   #git clone https://github.com/sirpdboy/luci-app-lucky
            git clone https://github.com/nobodyman-star/luci-app package/luci-app
 	   echo "src-git packages https://github.com/coolsnowwolf/packages" > feeds.conf.default
-           echo "#src-git luci https://github.com/coolsnowwolf/luci" >> feeds.conf.default
-           echo "src-git luci https://github.com/coolsnowwolf/luci.git;openwrt-23.05" >> feeds.conf.default
+           echo "src-git luci https://github.com/coolsnowwolf/luci" >> feeds.conf.default
+           echo "#src-git luci https://github.com/coolsnowwolf/luci.git;openwrt-23.05" >> feeds.conf.default
            echo "src-git routing https://github.com/coolsnowwolf/routing" >> feeds.conf.default
            echo "src-git telephony https://github.com/coolsnowwolf/telephony.git" >> feeds.conf.default
            echo "src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.default
