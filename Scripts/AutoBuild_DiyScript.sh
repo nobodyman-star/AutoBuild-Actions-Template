@@ -57,6 +57,8 @@ Firmware_Diy() {
 	   git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
            git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
 	   #git clone https://github.com/sirpdboy/netspeedtest package/netspeedtest
+           git clone https://github.com/sirpdboy/luci-theme-kucat package/luci-theme-kucat
+	   git clone https://github.com/kenzok78/luci-theme-design.git  package/luci-theme-design
 	   # Uncomment a feed source
            sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 	   # Modify default IP
