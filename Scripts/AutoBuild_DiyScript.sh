@@ -57,12 +57,12 @@ Firmware_Diy() {
 	   git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
            git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
 	   #git clone https://github.com/sirpdboy/netspeedtest package/netspeedtest
-           echo " src-git packages https://github.com/coolsnowwolf/packages" > feeds.conf.default
-           echo " src-git luci https://github.com/coolsnowwolf/luci" >> feeds.conf.default
-           echo " #src-git luci https://github.com/coolsnowwolf/luci.git;openwrt-23.05" >> feeds.conf.default
-           echo " src-git routing https://github.com/coolsnowwolf/routing" >> feeds.conf.default
-           echo " src-git telephony https://github.com/coolsnowwolf/telephony.git" >> feeds.conf.default
-	   echo " src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.default
+           echo "src-git packages https://github.com/coolsnowwolf/packages" > feeds.conf.default
+           echo "src-git luci https://github.com/coolsnowwolf/luci" >> feeds.conf.default
+           echo "#src-git luci https://github.com/coolsnowwolf/luci.git;openwrt-23.05" >> feeds.conf.default
+           echo "src-git routing https://github.com/coolsnowwolf/routing" >> feeds.conf.default
+           echo "src-git telephony https://github.com/coolsnowwolf/telephony.git" >> feeds.conf.default
+	   echo "src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.default
 	   # Uncomment a feed source
            # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 	   # Modify default IP
