@@ -80,12 +80,6 @@ jobs:
 
     steps:
     
-    - name: Cleanup GitHub Actions Cache
-      uses: actions/cache/clean@v4
-      with:
-         key: ${{ runner.os }}-build
-
-         
     - name: Cleanup runner workspace
       run: |
        sudo rm -rf "${{ github.workspace }}/_diag"
