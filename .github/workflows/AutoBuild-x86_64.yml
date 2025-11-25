@@ -79,7 +79,20 @@ jobs:
       contents: write
 
     steps:
+    
+    - name: Cleanup GitHub Actions Cache
+      uses: actions/cache/clean@v1
+      with:
+         key: ${{ runner.os }}-build
 
+         
+    - name: Cleanup runner workspace
+      run: |
+       sudo rm -rf "${{ github.workspace }}/_diag"
+        # 或更彻底地清理整个runner的缓存目录
+        # sudo rm -rf /home/runner/actions-runner/cached/_diag/*
+
+    
     - name: "Optimize disk space"
       if: env.DELETE_USELESS_FILES == 'true' && !cancelled()
       uses: "hugoalh/disk-space-optimizer-ghaction@v0.8.0"
