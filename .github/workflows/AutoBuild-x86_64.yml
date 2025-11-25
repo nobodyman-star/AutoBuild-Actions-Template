@@ -81,7 +81,7 @@ jobs:
     steps:
     
     - name: Cleanup GitHub Actions Cache
-      uses: actions/cache/clean@v1
+      uses: actions/cache/clean@v4
       with:
          key: ${{ runner.os }}-build
 
