@@ -47,28 +47,16 @@ Firmware_Diy() {
 	# ${CONFIG_FILE}			使用的配置文件名称
       
 	# ${FEEDS_CONF}			OpenWrt 源码目录下的 feeds.conf.default 文件
-           git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
-           git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
-	    #  git clone https://github.com/nobodyman-star/luci-app-control-weburl package/luci-app-control-weburl
-        #  git clone https://github.com/nobodyman-star/rely-app package/rely-app
-	       git clone https://github.com/sirpdboy/luci-app-lucky package/luci-app-lucky
-           git clone https://github.com/xuanranran/rely.git package/luci-app
-        #  git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
-	       git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
-           git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
-	       git clone https://github.com/sirpdboy/netspeedtest package/netspeedtest
-           echo "src-git packages https://github.com/coolsnowwolf/packages" > feeds.conf.default
-           echo "#src-git luci https://github.com/coolsnowwolf/luci" >> feeds.conf.default
-           echo "src-git luci https://github.com/coolsnowwolf/luci.git;openwrt-24.10" >> feeds.conf.default
-           echo "src-git routing https://github.com/coolsnowwolf/routing" >> feeds.conf.default
-           echo "src-git telephony https://github.com/coolsnowwolf/telephony.git" >> feeds.conf.default
-	       echo "src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.default
-		   echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> feeds.conf.default
-           echo "src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;main" >> feeds.conf.default
+           echo "src-git OpenAppFilter  https://github.com/destan19/OpenAppFilter" >>  feeds.conf.default 
+           echo "src-git luci-app-poweroffdevice  https://github.com/sirpdboy/luci-app-poweroffdevice" >>  feeds.conf.default  
+	       echo "src-git netspeedtest  https://github.com/sirpdboy/netspeedtest" >>  feeds.conf.default
+           echo "src-git istore https://github.com/linkease/istore.git" >>  feeds.conf.default
+	     
 	   # Uncomment a feed source
-           # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+           sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+		   sed -i 's/openwrt-23.05/openwrt-24.10/g'  feeds.conf.default
 	   # Modify default IP
-           sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
+           sed -i 's/192.168.1.1/192.168.123.2/g' package/base-files/files/bin/config_generate
                 
         
 	# ${CustomFiles}			仓库中的 /CustomFiles 绝对路径
