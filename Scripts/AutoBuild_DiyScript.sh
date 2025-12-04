@@ -48,10 +48,11 @@ Firmware_Diy() {
       
 	# ${FEEDS_CONF}			OpenWrt 源码目录下的 feeds.conf.default 文件
            echo "src-git OpenAppFilter  https://github.com/destan19/OpenAppFilter" >>  feeds.conf.default 
-           echo "src-git luci-app-poweroffdevice  https://github.com/sirpdboy/luci-app-poweroffdevice" >>  feeds.conf.default  
+           echo "src-git poweroffdevice  https://github.com/sirpdboy/luci-app-poweroffdevice" >>  feeds.conf.default  
 	       echo "src-git netspeedtest  https://github.com/sirpdboy/netspeedtest" >>  feeds.conf.default
-           echo "src-git istore https://github.com/linkease/istore.git" >>  feeds.conf.default
-	     
+           echo "src-git istore  https://github.com/linkease/istore.git" >>  feeds.conf.default
+	       echo "src-git kucat  https://github.com/sirpdboy/luci-theme-kucat.git" >>  feeds.conf.default
+		   echo "src-git kucatconfig  https://github.com/sirpdboy/luci-app-kucat-config.git" >>  feeds.conf.default
 	   # Uncomment a feed source
            sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 		   sed -i 's/openwrt-23.05/openwrt-24.10/g'  feeds.conf.default
